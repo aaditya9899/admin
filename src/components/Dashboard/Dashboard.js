@@ -29,10 +29,13 @@ const Dashboard = () => {
   };
 
   const filteredUsers = useMemo(() => {
+    const start = page * rowsPerPage;
+    const end = start + rowsPerPage;
     return users.filter(user => 
       user.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-  }, [users, searchQuery]);
+    ).slice(start, end);
+   }, [users, searchQuery, page, rowsPerPage]);
+   
 
   return (
     <div>

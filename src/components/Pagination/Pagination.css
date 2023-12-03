@@ -1,0 +1,17 @@
+.first-page, .previous-page, .next-page, .last-page {
+    background-color: #04AA6D; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 15px; /* Smaller size */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Smaller font size */
+    margin: 4px 2px;
+    cursor: pointer;
+   }
+   
+   .first-page:hover, .previous-page:hover, .next-page:hover, .last-page:hover {
+    background-color: #037C52; /* Darker blue on hover */
+   }
+   
