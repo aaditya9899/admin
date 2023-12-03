@@ -42,11 +42,7 @@ const UsersTable = ({ users, setUsers }) => {
           {users.map((user, index) => (
             <TableRow key={user.id}>
               <TableCell>
-                {editIdx === index ? (
-                  <TextField value={tempData.id} onChange={(e) => handleChange(e, 'id')} />
-                ) : (
-                  user.id
-                )}
+                {user.id}
               </TableCell>
               <TableCell>
                 {editIdx === index ? (
